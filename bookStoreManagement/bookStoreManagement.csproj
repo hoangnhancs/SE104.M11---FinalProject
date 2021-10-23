@@ -71,10 +71,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="RJButton\RJButton.cs">
+    <Compile Include="Custom_Button\RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="RJButton\RJToggleButton.cs" />
+    <Compile Include="Custom_Button\RJToggleButton.cs" />
     <EmbeddedResource Include="Custom_Text_Box\custom_textbox.resx">
       <DependentUpon>custom_textbox.cs</DependentUpon>
     </EmbeddedResource>

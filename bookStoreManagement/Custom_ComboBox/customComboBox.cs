@@ -15,6 +15,8 @@ namespace bookStoreManagement.Custom_ComboBox
     [DefaultEvent("OnSelectedIndexChanged")]
     public class customComboBox : ComboBox
     {
+        #region -> Fields
+        //Fields
         private Color backColor = Color.WhiteSmoke;
         private Color iconColor = Color.MediumSlateBlue;
         private Color listBackColor = Color.FromArgb(230, 228, 245);
@@ -29,8 +31,9 @@ namespace bookStoreManagement.Custom_ComboBox
 
         //Events
         public event EventHandler OnSelectedIndexChanged;//Default event
+        #endregion
 
-        //Constructor
+        #region -> Constructor
         public customComboBox()
         {
             cmbList = new ComboBox();
@@ -80,9 +83,10 @@ namespace bookStoreManagement.Custom_ComboBox
             this.ResumeLayout();
             AdjustComboBoxDimensions();
         }
+        #endregion
 
         //Properties
-        //-> Appearance
+        #region -> Appearance properties
         [Category("RJ Code - Appearance")]
         public new Color BackColor
         {
@@ -191,8 +195,10 @@ namespace bookStoreManagement.Custom_ComboBox
                     cmbList.DropDownStyle = value;
             }
         }
-        //Properties
-        //-> Data
+        #endregion
+
+        #region -> Data properties
+
         [Category("RJ Code - Data")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         [Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor))]
@@ -281,8 +287,9 @@ namespace bookStoreManagement.Custom_ComboBox
             get { return cmbList.ValueMember; }
             set { cmbList.ValueMember = value; }
         }
+        #endregion
 
-        //Private methods
+        #region -> Private methods
         private void AdjustComboBoxDimensions()
         {
             cmbList.Width = lblText.Width;
@@ -292,8 +299,9 @@ namespace bookStoreManagement.Custom_ComboBox
                 Y = lblText.Bottom - cmbList.Height
             };
         }
+        #endregion
 
-        //Event methods
+        #region -> Event methods
 
         //-> Default event
         private void ComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -357,13 +365,15 @@ namespace bookStoreManagement.Custom_ComboBox
             this.OnMouseEnter(e);
         }
         //::::+
+        #endregion
 
-        //Overridden methods
+        #region -> Overridden methods
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
             AdjustComboBoxDimensions();
         }
+        #endregion
 
 
     }

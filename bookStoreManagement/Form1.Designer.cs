@@ -31,9 +31,8 @@ namespace bookStoreManagement
         {
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.custom_picture_box1 = new bookStoreManagement.Custom_PictureBox.custom_picture_box();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.customComboBox1 = new bookStoreManagement.Custom_ComboBox.customComboBox();
-            this.rjButton1 = new bookStoreManagement.RJButton.RJButton();
-            this.custom_textbox1 = new bookStoreManagement.Custom_Text_Box.custom_textbox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.custom_picture_box1)).BeginInit();
             this.SuspendLayout();
@@ -58,17 +57,25 @@ namespace bookStoreManagement
             this.custom_picture_box1.BorderSize = 2;
             this.custom_picture_box1.GradientAngle = 50F;
             this.custom_picture_box1.Image = global::bookStoreManagement.Properties.Resources.logo_text2;
-            this.custom_picture_box1.Location = new System.Drawing.Point(765, 106);
+            this.custom_picture_box1.Location = new System.Drawing.Point(856, 35);
             this.custom_picture_box1.Name = "custom_picture_box1";
-            this.custom_picture_box1.Size = new System.Drawing.Size(105, 105);
+            this.custom_picture_box1.Size = new System.Drawing.Size(49, 49);
             this.custom_picture_box1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.custom_picture_box1.TabIndex = 3;
             this.custom_picture_box1.TabStop = false;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(613, 160);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(202, 24);
+            this.comboBox1.TabIndex = 5;
+            // 
             // customComboBox1
             // 
             this.customComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.customComboBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.customComboBox1.BorderColor = System.Drawing.Color.Navy;
             this.customComboBox1.BorderSize = 1;
             this.customComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customComboBox1.ForeColor = System.Drawing.Color.DimGray;
@@ -76,62 +83,21 @@ namespace bookStoreManagement
             this.customComboBox1.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.customComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.customComboBox1.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox1.Location = new System.Drawing.Point(371, 248);
+            this.customComboBox1.Location = new System.Drawing.Point(191, 202);
             this.customComboBox1.MinimumSize = new System.Drawing.Size(200, 0);
             this.customComboBox1.Name = "customComboBox1";
-            this.customComboBox1.Size = new System.Drawing.Size(280, 28);
-            this.customComboBox1.TabIndex = 2;
+            this.customComboBox1.Size = new System.Drawing.Size(200, 28);
+            this.customComboBox1.TabIndex = 6;
             this.customComboBox1.Texts = "";
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 40;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(332, 119);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(229, 45);
-            this.rjButton1.TabIndex = 1;
-            this.rjButton1.Text = "heelo :v";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // custom_textbox1
-            // 
-            this.custom_textbox1.BackColor = System.Drawing.SystemColors.Window;
-            this.custom_textbox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.custom_textbox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.custom_textbox1.BorderRadius = 20;
-            this.custom_textbox1.BorderSize = 2;
-            this.custom_textbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.custom_textbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.custom_textbox1.Location = new System.Drawing.Point(120, 280);
-            this.custom_textbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.custom_textbox1.Multiline = false;
-            this.custom_textbox1.Name = "custom_textbox1";
-            this.custom_textbox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.custom_textbox1.PasswordChar = false;
-            this.custom_textbox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.custom_textbox1.PlaceholderText = "";
-            this.custom_textbox1.Size = new System.Drawing.Size(250, 35);
-            this.custom_textbox1.TabIndex = 4;
-            this.custom_textbox1.Texts = "";
-            this.custom_textbox1.UnderlinedStyle = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1227, 527);
-            this.Controls.Add(this.custom_textbox1);
-            this.Controls.Add(this.custom_picture_box1);
             this.Controls.Add(this.customComboBox1);
-            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.custom_picture_box1);
             this.Controls.Add(this.pictureBox_logo);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -144,10 +110,9 @@ namespace bookStoreManagement
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox_logo;
-        private RJButton.RJButton rjButton1;
-        private Custom_ComboBox.customComboBox customComboBox1;
         private Custom_PictureBox.custom_picture_box custom_picture_box1;
-        private Custom_Text_Box.custom_textbox custom_textbox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private Custom_ComboBox.customComboBox customComboBox1;
     }
 }
 

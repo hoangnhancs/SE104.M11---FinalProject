@@ -17,6 +17,9 @@ namespace bookStoreManagement
             InitializeComponent();
         }
 
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
