@@ -34,7 +34,7 @@ namespace testGit
                 textbox_1.Visibility = Visibility.Visible;
             else
                 textbox_1.Visibility = Visibility.Hidden; #testnhan2
-
+            #test2
         }
     }
 }
