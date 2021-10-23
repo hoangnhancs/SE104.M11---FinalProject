@@ -30,8 +30,8 @@ namespace bookStoreManagement
         private void InitializeComponent()
         {
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
-            this.custom_picture_box1 = new bookStoreManagement.Custom_PictureBox.custom_picture_box();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.custom_picture_box1 = new bookStoreManagement.Custom_PictureBox.custom_picture_box();
             this.customComboBox1 = new bookStoreManagement.Custom_ComboBox.customComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.custom_picture_box1)).BeginInit();
@@ -47,6 +47,14 @@ namespace bookStoreManagement
             this.pictureBox_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_logo.TabIndex = 0;
             this.pictureBox_logo.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(613, 160);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(202, 24);
+            this.comboBox1.TabIndex = 5;
             // 
             // custom_picture_box1
             // 
@@ -64,18 +72,10 @@ namespace bookStoreManagement
             this.custom_picture_box1.TabIndex = 3;
             this.custom_picture_box1.TabStop = false;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(613, 160);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(202, 24);
-            this.comboBox1.TabIndex = 5;
-            // 
             // customComboBox1
             // 
             this.customComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.customComboBox1.BorderColor = System.Drawing.Color.Navy;
+            this.customComboBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.customComboBox1.BorderSize = 1;
             this.customComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.customComboBox1.ForeColor = System.Drawing.Color.DimGray;
@@ -83,7 +83,7 @@ namespace bookStoreManagement
             this.customComboBox1.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.customComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.customComboBox1.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox1.Location = new System.Drawing.Point(191, 202);
+            this.customComboBox1.Location = new System.Drawing.Point(322, 240);
             this.customComboBox1.MinimumSize = new System.Drawing.Size(200, 0);
             this.customComboBox1.Name = "customComboBox1";
             this.customComboBox1.Size = new System.Drawing.Size(200, 28);
@@ -101,6 +101,7 @@ namespace bookStoreManagement
             this.Controls.Add(this.pictureBox_logo);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.custom_picture_box1)).EndInit();
             this.ResumeLayout(false);
