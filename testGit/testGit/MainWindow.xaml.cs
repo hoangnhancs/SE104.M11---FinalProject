@@ -29,6 +29,13 @@ namespace testGit
         {
 
             #testtesttét
+            #testlancuoi2
+            if (textbox_1.Visibility != Visibility.Visible)
+                textbox_1.Visibility = Visibility.Visible;
+            else
+                textbox_1.Visibility = Visibility.Hidden; #testnhan2
+            #test2
+
 
             #testlancuoi
 
