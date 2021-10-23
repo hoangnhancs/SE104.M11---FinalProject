@@ -27,7 +27,14 @@ namespace testGit
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             #testtesttét
+
+            if (textbox_1.Visibility != Visibility.Visible)
+                textbox_1.Visibility = Visibility.Visible;
+            else
+                textbox_1.Visibility = Visibility.Hidden;
+
         }
     }
 }
