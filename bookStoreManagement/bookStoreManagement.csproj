@@ -52,6 +52,12 @@
     <Compile Include="Custom_PictureBox\custom_picture_box.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Custom_Text_Box\custom_textbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom_Text_Box\custom_textbox.Designer.cs">
+      <DependentUpon>custom_textbox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="RJButton\RJToggleButton.cs" />
+    <EmbeddedResource Include="Custom_Text_Box\custom_textbox.resx">
+      <DependentUpon>custom_textbox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
