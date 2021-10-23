@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Custom_ComboBox\customComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom_PictureBox\custom_picture_box.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

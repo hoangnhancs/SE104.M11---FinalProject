@@ -31,6 +31,7 @@ namespace bookStoreManagement
         {
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.rjButton1 = new bookStoreManagement.RJButton.RJButton();
+            this.customComboBox1 = new bookStoreManagement.Custom_ComboBox.customComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,6 +49,10 @@ namespace bookStoreManagement
             // rjButton1
             // 
             this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 40;
+            this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;
@@ -55,14 +60,34 @@ namespace bookStoreManagement
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(229, 45);
             this.rjButton1.TabIndex = 1;
-            this.rjButton1.Text = "rjButton1";
+            this.rjButton1.Text = "heelo :v";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // customComboBox1
+            // 
+            this.customComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.customComboBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.customComboBox1.BorderSize = 1;
+            this.customComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.customComboBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.customComboBox1.FormattingEnabled = true;
+            this.customComboBox1.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.customComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.customComboBox1.ListTextColor = System.Drawing.Color.DimGray;
+            this.customComboBox1.Location = new System.Drawing.Point(371, 248);
+            this.customComboBox1.MinimumSize = new System.Drawing.Size(200, 0);
+            this.customComboBox1.Name = "customComboBox1";
+            this.customComboBox1.Size = new System.Drawing.Size(280, 28);
+            this.customComboBox1.TabIndex = 2;
+            this.customComboBox1.Texts = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1227, 527);
+            this.Controls.Add(this.customComboBox1);
             this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.pictureBox_logo);
             this.Name = "Form1";
@@ -76,6 +101,7 @@ namespace bookStoreManagement
 
         private System.Windows.Forms.PictureBox pictureBox_logo;
         private RJButton.RJButton rjButton1;
+        private Custom_ComboBox.customComboBox customComboBox1;
     }
 }
 
