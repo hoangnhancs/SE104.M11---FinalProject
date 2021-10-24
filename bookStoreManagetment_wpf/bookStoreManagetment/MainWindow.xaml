@@ -32,14 +32,7 @@
 
         <!--Menu-->
         <Grid Grid.Column="0" Grid.Row="1">
-            <!--Màu nền-->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="43*"/>
-                <ColumnDefinition Width="23*"/>
-            </Grid.ColumnDefinitions>
-
-
-            <StackPanel x:Name="stackPanelMenu" Grid.ColumnSpan="2" Margin="0,0,0.4,0" >
+            <StackPanel x:Name="stackPanelMenu" Margin="0,0,0.4,0" >
                 <!--Màu Nền-->
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
@@ -53,18 +46,23 @@
                 <Button x:Name="btnDashboard" 
                         Background="#00383131" 
                         BorderBrush="#00000000" 
-                        Foreground="Black"
-                        HorizontalAlignment="Left">
+                        Foreground="Black" 
+                        Click="btnDashboard_Click" 
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"
+                        >
                     Dashboard
                 </Button>
+
 
                 <!--Quản Lý Vật Phẩm-->
                 <StackPanel x:Name="stackPanelQLVatPham">
                     <Button x:Name="btnQLVatPham" 
-                        Background="#00383131" 
-                        BorderBrush="#00000000" 
-                        Foreground="Black"
-                        HorizontalAlignment="Left" 
+                            Background="#00383131" 
+                            BorderBrush="#00000000" 
+                            Foreground="Black"
+                            HorizontalAlignment="Stretch" 
+                            HorizontalContentAlignment="Left"
                             Click="btnQLVatPham_Click">
                         Quản Lý Vật Phẩm
                     </Button>
@@ -74,214 +72,238 @@
                                 Margin="30 0 0 0" 
                                 Visibility="Collapsed">
                         <Button x:Name="btnDSVatPham" 
-                        Background="#00383131" 
-                        BorderBrush="#00000000" 
-                        Foreground="Black"
-                        HorizontalAlignment="Left">
+                                Background="#00383131" 
+                                BorderBrush="#00000000" 
+                                Foreground="Black"
+                                HorizontalAlignment="Stretch"
+                                HorizontalContentAlignment="Left">
                             Danh Sách Vật Phẩm
                         </Button>
 
                         <Button x:Name="btnNhapHang" 
-                        Background="#00383131" 
-                        BorderBrush="#00000000" 
-                        Foreground="Black"
-                        HorizontalAlignment="Left">
+                                Background="#00383131" 
+                                BorderBrush="#00000000" 
+                                Foreground="Black"
+                                HorizontalAlignment="Stretch"
+                                HorizontalContentAlignment="Left">
                             Nhập Hàng
                         </Button>
 
                         <Button x:Name="btnKiemHang" 
-                        Background="#00383131" 
-                        BorderBrush="#00000000" 
-                        Foreground="Black"
-                        HorizontalAlignment="Left">
+                                Background="#00383131" 
+                                BorderBrush="#00000000" 
+                                Foreground="Black"
+                                HorizontalAlignment="Stretch"
+                                HorizontalContentAlignment="Left">
                             Kiểm Hàng
                         </Button>
 
                         <Button x:Name="btnNhaCungCap" 
-                        Background="#00383131" 
-                        BorderBrush="#00000000" 
-                        Foreground="Black"
-                        HorizontalAlignment="Left">
+                                Background="#00383131" 
+                                BorderBrush="#00000000" 
+                                Foreground="Black"
+                                HorizontalAlignment="Stretch"
+                                HorizontalContentAlignment="Left">
                             Nhà Cung Cấp
                         </Button>
                     </StackPanel>
+                </StackPanel>
 
-                    <!--Bán Vật Phẩm-->
-                    <StackPanel x:Name="stackPanelBanVatPham">
-                        <Button x:Name="btnBanVatPham" 
-                        Background="#00383131" 
-                        BorderBrush="#00000000" 
-                        Foreground="Black"
-                        HorizontalAlignment="Left" Click="btnBanVatPham_Click" >
-                            Bán Vật Phẩm
-                        </Button>
-
-                        <!--sub menu Bán vật phẩm-->
-                        <StackPanel x:Name="stackPanelSubMenuBanVP" 
-                                Margin="30 0 0 0" 
-                                Visibility="Collapsed">
-                            <Button x:Name="btnDSHoaDon" 
-                            Background="#00383131" 
-                            BorderBrush="#00000000" 
-                            Foreground="Black"
-                            HorizontalAlignment="Left">
-                                Danh Sách Hoá Đơn
-                            </Button>
-
-                            <Button x:Name="btnKhachTraHang" 
-                            Background="#00383131" 
-                            BorderBrush="#00000000" 
-                            Foreground="Black"
-                            HorizontalAlignment="Left">
-                                Khách Trả Hàng
-                            </Button>
-                        </StackPanel>
-                    </StackPanel>
-
-                    <!--Quản Lý Khách Hàng-->
-                    <StackPanel x:Name="stackPanelQLKH">
-                        <Button x:Name="btnQLKhachHang" 
+                <!--Bán Vật Phẩm-->
+                <StackPanel x:Name="stackPanelBanVatPham">
+                    <Button x:Name="btnBanVatPham" 
                                 Background="#00383131" 
                                 BorderBrush="#00000000" 
                                 Foreground="Black"
-                                HorizontalAlignment="Left"
-                                Click="btnQLKhachHang_Click">
-                            Quản Lý Khách Hàng
+                                HorizontalAlignment="Stretch"
+                                HorizontalContentAlignment="Left"
+                                Click="btnBanVatPham_Click" >
+                        Bán Vật Phẩm
+                    </Button>
+
+                    <!--sub menu Bán vật phẩm-->
+                    <StackPanel x:Name="stackPanelSubMenuBanVP" 
+                                    Margin="30 0 0 0" 
+                                    Visibility="Collapsed">
+                        <Button x:Name="btnDSHoaDon" 
+                                    Background="#00383131" 
+                                    BorderBrush="#00000000" 
+                                    Foreground="Black"
+                                    HorizontalAlignment="Stretch"
+                                    HorizontalContentAlignment="Left">
+                            Danh Sách Hoá Đơn
                         </Button>
 
-                        <!--sub menu Bán vật phẩm-->
-                        <StackPanel x:Name="stackPanelSubMenuQLKH" 
-                                Margin="30 0 0 0" 
-                                Visibility="Collapsed">
-                            <Button x:Name="btnDSKhachHang" 
-                            Background="#00383131" 
-                            BorderBrush="#00000000" 
-                            Foreground="Black"
-                            HorizontalAlignment="Left">
-                                Danh Sách Khách Hàng
-                            </Button>
-
-                            <Button x:Name="btnNhomKH" 
-                            Background="#00383131" 
-                            BorderBrush="#00000000" 
-                            Foreground="Black"
-                            HorizontalAlignment="Left">
-                                Nhóm Khách Hàng
-                            </Button>
-                        </StackPanel>
+                        <Button x:Name="btnKhachTraHang" 
+                                    Background="#00383131" 
+                                    BorderBrush="#00000000" 
+                                    Foreground="Black"
+                                    HorizontalAlignment="Stretch"
+                                    HorizontalContentAlignment="Left">
+                            Khách Trả Hàng
+                        </Button>
                     </StackPanel>
+                </StackPanel>
 
-                    <!--Quản Lý Nhân viên-->
-                    <StackPanel x:Name="stackPanelQLNV">
-                        <Button x:Name="btnQLNhanVien" 
+                <!--Quản Lý Khách Hàng-->
+                <StackPanel x:Name="stackPanelQLKH">
+                    <Button x:Name="btnQLKhachHang" 
+                                    Background="#00383131" 
+                                    BorderBrush="#00000000" 
+                                    Foreground="Black"
+                                    HorizontalAlignment="Stretch"
+                                    HorizontalContentAlignment="Left"
+                                    Click="btnQLKhachHang_Click">
+                        Quản Lý Khách Hàng
+                    </Button>
+
+                    <!--sub menu Bán vật phẩm-->
+                    <StackPanel x:Name="stackPanelSubMenuQLKH" 
+                                        Margin="30 0 0 0" 
+                                        Visibility="Collapsed">
+                        <Button x:Name="btnDSKhachHang" 
+                                        Background="#00383131" 
+                                        BorderBrush="#00000000" 
+                                        Foreground="Black"
+                                        HorizontalAlignment="Stretch"
+                                        HorizontalContentAlignment="Left">
+                            Danh Sách Khách Hàng
+                        </Button>
+
+                        <Button x:Name="btnNhomKH" 
+                                        Background="#00383131" 
+                                        BorderBrush="#00000000" 
+                                        Foreground="Black"
+                                        HorizontalAlignment="Stretch"
+                                        HorizontalContentAlignment="Left">
+                            Nhóm Khách Hàng
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            <!--Quản Lý Nhân viên-->
+            <StackPanel x:Name="stackPanelQLNV">
+                <Button x:Name="btnQLNhanVien" 
                         Background="#00383131" 
                         BorderBrush="#00000000" 
                         Foreground="Black"
-                        HorizontalAlignment="Left" Click="btnQLNhanVien_Click" >
-                            Quản Lý Nhân Viên
-                        </Button>
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left" 
+                        Click="btnQLNhanVien_Click" >
+                    Quản Lý Nhân Viên
+                </Button>
 
-                        <!--sub menu Bán vật phẩm-->
-                        <StackPanel x:Name="stackPanelSubMenuQLNV" 
-                                Margin="30 0 0 0" 
-                                Visibility="Collapsed">
-                            <Button x:Name="btnDSNhanVien" 
+                <!--sub menu Bán vật phẩm-->
+                <StackPanel x:Name="stackPanelSubMenuQLNV" 
+                            Margin="30 0 0 0" 
+                            Visibility="Collapsed">
+                    <Button x:Name="btnDSNhanVien" 
                             Background="#00383131" 
                             BorderBrush="#00000000" 
                             Foreground="Black"
-                            HorizontalAlignment="Left">
-                                Danh Sách Nhân Viên
-                            </Button>
-
-                            <Button x:Name="btnPhanQuyen" 
-                            Background="#00383131" 
-                            BorderBrush="#00000000" 
-                            Foreground="Black"
-                            HorizontalAlignment="Left">
-                                Phân Quyền
-                            </Button>
-                        </StackPanel>
-                    </StackPanel>
-
-                    <!--Quản Lý Thu Chi-->
-                    <StackPanel x:Name="stackPanelQLThuChi">
-                        <Button x:Name="btnQLThuChi" 
-                                Background="#00383131" 
-                                BorderBrush="#00000000" 
-                                Foreground="Black"
-                                HorizontalAlignment="Left" 
-                                Click="btnQLThuChi_Click" >
-                            Quản Lý Thu Chi
-                        </Button>
-
-                        <!--sub menu Quản Lý Thu Chi-->
-                        <StackPanel x:Name="stackPanelSubMenuQLThuChi" 
-                                Margin="30 0 0 0" 
-                                Visibility="Collapsed">
-                            <Button x:Name="btnDSThuChi" 
-                            Background="#00383131" 
-                            BorderBrush="#00000000" 
-                            Foreground="Black"
-                            HorizontalAlignment="Left">
-                                Danh Sách Thu Chi
-                            </Button>
-
-                            <Button x:Name="btnPhieuThu" 
-                            Background="#00383131" 
-                            BorderBrush="#00000000" 
-                            Foreground="Black"
-                            HorizontalAlignment="Left">
-                                Phiếu Thu
-                            </Button>
-
-                            <Button x:Name="btnPhieuChi" 
-                            Background="#00383131" 
-                            BorderBrush="#00000000" 
-                            Foreground="Black"
-                            HorizontalAlignment="Left">
-                                Phiếu Chi
-                            </Button>
-                        </StackPanel>
-                    </StackPanel>
-
-                    <!--Quản Lý Báo Cáo-->
-                    <Button x:Name="btnQLBaoCao" 
-                            Background="#00383131" 
-                            BorderBrush="#00000000" 
-                            Foreground="Black"
-                            HorizontalAlignment="Left">
-                        Quản Lí Báo Cáo
+                            HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Left" >
+                        Danh Sách Nhân Viên
                     </Button>
 
-                    <!--Quản Lý Sự Kiện-->
-                    <Button x:Name="btnQLSuKien" 
+                    <Button x:Name="btnPhanQuyen" 
                             Background="#00383131" 
                             BorderBrush="#00000000" 
                             Foreground="Black"
-                            HorizontalAlignment="Left">
-                        Quản Lí Sự Kiện
-                    </Button>
-
-                    <!--Quản Lý Mail-->
-                    <Button x:Name="btnQLMail" 
-                            Background="#00383131" 
-                            BorderBrush="#00000000" 
-                            Foreground="Black"
-                            HorizontalAlignment="Left">
-                        Quản Lí Mail
-                    </Button>
-
-                    <!--Cài Đặt Chung-->
-                    <Button x:Name="btnCaiDatChung" 
-                            Background="#00383131" 
-                            BorderBrush="#00000000" 
-                            Foreground="Black"
-                            HorizontalAlignment="Left">
-                        Cài Đặt Chung
+                            HorizontalAlignment="Stretch"
+                            HorizontalContentAlignment="Left" >
+                        Phân Quyền
                     </Button>
                 </StackPanel>
             </StackPanel>
 
+            <!--Quản Lý Thu Chi-->
+                <StackPanel x:Name="stackPanelQLThuChi">
+                    <Button x:Name="btnQLThuChi" 
+                                Background="#00383131" 
+                                BorderBrush="#00000000" 
+                                Foreground="Black"
+                                HorizontalAlignment="Stretch"
+                                HorizontalContentAlignment="Left"  
+                                Click="btnQLThuChi_Click" >
+                        Quản Lý Thu Chi
+                    </Button>
+
+                    <!--sub menu Quản Lý Thu Chi-->
+                    <StackPanel x:Name="stackPanelSubMenuQLThuChi" 
+                                Margin="30 0 0 0" 
+                                Visibility="Collapsed">
+                        <Button x:Name="btnDSThuChi" 
+                                Background="#00383131" 
+                                BorderBrush="#00000000" 
+                                Foreground="Black"
+                                HorizontalAlignment="Stretch"
+                                HorizontalContentAlignment="Left" >
+                            Danh Sách Thu Chi
+                        </Button>
+
+                        <Button x:Name="btnPhieuThu" 
+                                Background="#00383131" 
+                                BorderBrush="#00000000" 
+                                Foreground="Black"
+                                HorizontalAlignment="Stretch"
+                                HorizontalContentAlignment="Left" >
+                            Phiếu Thu
+                        </Button>
+
+                        <Button x:Name="btnPhieuChi" 
+                                Background="#00383131" 
+                                BorderBrush="#00000000" 
+                                Foreground="Black"
+                                HorizontalAlignment="Stretch"
+                                HorizontalContentAlignment="Left" >
+                            Phiếu Chi
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+                <!--Quản Lý Báo Cáo-->
+                <Button x:Name="btnQLBaoCao" 
+                        Background="#00383131" 
+                        BorderBrush="#00000000" 
+                        Foreground="Black"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left" 
+                        Click="btnQLBaoCao_Click">
+                    Quản Lí Báo Cáo
+                </Button>
+
+                <!--Quản Lý Sự Kiện-->
+                <Button x:Name="btnQLSuKien" 
+                        Background="#00383131" 
+                        BorderBrush="#00000000" 
+                        Foreground="Black"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"  
+                        Click="btnQLSuKien_Click">
+                    Quản Lí Sự Kiện
+                </Button>
+
+                <!--Quản Lý Mail-->
+                <Button x:Name="btnQLMail" 
+                        Background="#00383131" 
+                        BorderBrush="#00000000" 
+                        Foreground="Black"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"  
+                        Click="btnQLMail_Click">
+                    Quản Lí Mail
+                </Button>
+
+                <!--Cài Đặt Chung-->
+                <Button x:Name="btnCaiDatChung" 
+                        Background="#00383131" 
+                        BorderBrush="#00000000" 
+                        Foreground="Black"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left" 
+                        Click="btnCaiDatChung_Click">
+                    Cài Đặt Chung
+                </Button>
+            </StackPanel>
         </Grid>
 
         <!--Header-->
